@@ -22,6 +22,7 @@ De todos los modelos GPT4All se seleccionó a los siguientes dos modelos, en bas
 |-------------------------------------|-------|---|
 | orca-mini-3b.ggmlv3.q4_0.bin        |  1,79 | 4 |
 | ggml-model-gpt4all-falcon-q4_0.bin  |  3,78 | 8 |
+
 Fuente: [models.json](https://raw.githubusercontent.com/nomic-ai/gpt4all/main/gpt4all-chat/metadata/models.json)
 
 Es importante observar que al ejecutar por primera vez
