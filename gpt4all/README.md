@@ -25,6 +25,8 @@ De todos los modelos GPT4All se seleccionó a los siguientes dos modelos, en bas
 
 Fuente: [models.json](https://raw.githubusercontent.com/nomic-ai/gpt4all/main/gpt4all-chat/metadata/models.json)
 
+### Directorio caché de modelos
+
 Es importante observar que al ejecutar por primera vez
 un código que utiliza un determinado modelo GPT4All dicho modelo es descargado automáticamente en un directorio caché: 
 * `C:\Users\<Nombre-Usuario>\.cache\gpt4all`, en Windows, y
@@ -82,7 +84,7 @@ utilizando el modelo GPT4All `orca-mini-3b.ggmlv3.q4_0.bin`
 | Cargar modelo  | nombre del modelo: `orca-mini-3b.ggmlv3.q4_0.bin` | (modelo cargado en la RAM) | [*] `43,66`
 | Autocompletar texto    | texto: `The capital of France is ` | `1. Paris` | `70,47` |
 
-[*] El modelo ya estaba presente en el directorio caché antes de registrar los resultados de este experimento.
+[*] El modelo ya estaba descargado en el [directorio caché de modelos](#directorio-caché-de-modelos) antes de ejecutar y registrar los datos de este experimento, como consecuencia de una ejecución anterior.
 
 * **Conclusión**
   * Con la configuración de hardware y software utilizada, si el tiempo de respuesta al utilizar el modelo `orca-mini-3b.ggmlv3.q4_0.bin` es importante, se recomienda no utilizarlo, ya que es muy lento comparado con el tiempo de respuesta de [ChatGPT](https://chat.openai.com/), que en general es menor a un segundo.
@@ -102,7 +104,7 @@ utilizando el modelo GPT4All `orca-mini-3b.ggmlv3.q4_0.bin`
 | Cargar modelo  | nombre del modelo: `ggml-model-gpt4all-falcon-q4_0.bin` | (modelo cargado en la RAM) | [*] `122,96`
 | Autocompletar texto    | texto: `The first computer was invented by ` | [**] `Babbage` | `222,22` |
 
-[*] El modelo ya estaba presente en el directorio caché antes de registrar los resultados de este experimento.
+[*] El modelo ya estaba descargado en el [directorio caché de modelos](#directorio-caché-de-modelos) antes de ejecutar y registrar los datos de este experimento, como consecuencia de una ejecución anterior.
 
 [**] En algunas ejecuciones del experimento, el modelo autocompletaba el texto de entrada con textos como `Alan T` y `Ada`. 
 Que el modelo de respuestas con significados diferentes a una misma pregunta es un problema de los modelos LLM, en general, llamado [_alucinación_](https://arxiv.org/abs/2202.03629).
@@ -153,7 +155,7 @@ utilizando el modelo GPT4All `ggml-model-gpt4all-falcon-q4_0.bin`
 | 2do intercambio de mensajes    | texto: `write me a short poem` | texto:  `Here's a short poem for you:` <br> ` ` <br> `Raindrops on roses` <br>  ` ` <br> `Raindrops on roses` <br> `Raindrops on roses` <br> `Raindrops on roses` <br> `Raindrops on roses` <br> `Raindrops on roses` <br> `Raindrops on roses` <br> `Raindrops on roses` <br> `Raindrops on roses` <br> `Raindrops on roses` <br> `Raindrops on roses` <br> `Raindrops on roses` <br> `Raindrops on roses` <br> `Raindrops on roses` <br> `Raindrops on roses` <br> `Raindrops on roses` <br> `Raindrops on roses` <br> `Raindrops on roses` <br> `Raindrops on roses` <br> `Raindrops on roses` <br> `Raindrops on roses` <br> `Raindrops on roses` <br> `Raindrops on roses` <br> `Raindrops on roses` <br> `Raindrops on roses` <br> `Raindrops on roses` <br>  `Raindrops on roses` <br> `Raindrops on roses` <br> `Raindrops on roses` <br> `Raindrops on roses` <br> `Raindrops on roses` <br> `Raind` | `3185,37` |
 | 3er intercambio de mensajes    | texto: `thank you` | texto: `You're welcome! Is there anything else I can help you with?` | `192,36` |
 
-[*] Nota: El modelo ya había sido descargado antes de registrar los resultados de este experimento.
+[*] Nota: El modelo ya estaba descargado en el [directorio caché de modelos](#directorio-caché-de-modelos) antes de ejecutar y registrar los datos de este experimento, como consecuencia de una ejecución anterior.
 
 * **Conclusión**
   * Con la configuración de hardware y software utilizada, si el tiempo de respuesta al utilizar el modelo `ggml-model-gpt4all-falcon-q4_0.bin` es importante, se recomienda no utilizarlo, ya que es muy lento comparado con el tiempo de respuesta de [ChatGPT](https://chat.openai.com/), que en general es menor a un segundo.
