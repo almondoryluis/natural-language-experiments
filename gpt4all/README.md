@@ -107,7 +107,7 @@ utilizando el modelo GPT4All `orca-mini-3b.ggmlv3.q4_0.bin`
 [*] El modelo ya estaba descargado en el [directorio caché de modelos](#directorio-caché-de-modelos) antes de ejecutar y registrar los datos de este experimento, como consecuencia de una ejecución anterior.
 
 [**] En algunas ejecuciones del experimento, el modelo autocompletaba el texto de entrada con textos como `Alan T` y `Ada`. 
-Que el modelo de respuestas con significados diferentes a una misma pregunta es un problema de los modelos LLM, en general, llamado [_alucinación_](https://arxiv.org/abs/2202.03629).
+Que el modelo devuelva respuestas, con significados diferentes, a una misma pregunta es un problema de los modelos LLM en general, llamado [_alucinación_](https://arxiv.org/abs/2202.03629).
 
 * **Conclusión**
   * Con la configuración de hardware y software utilizada, si el tiempo de respuesta al utilizar el modelo `orca-mini-3b.ggmlv3.q4_0.bin` es importante, se recomienda no utilizarlo, ya que es muy lento comparado con el tiempo de respuesta de [ChatGPT](https://chat.openai.com/), que en general es menor a un segundo.
